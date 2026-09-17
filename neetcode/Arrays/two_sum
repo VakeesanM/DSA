@@ -1,0 +1,8 @@
+from typing import List
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i, num in enumerate(nums):
+            if (target-num) in nums:
+                n = nums.index(target-num)
+                if n != i:
+                    return sorted([i,n])
