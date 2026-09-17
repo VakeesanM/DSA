@@ -1,3 +1,8 @@
+"""
+Basic Node class that is used by AI Search, BFS and DFS problems.
+
+"""
+
 class Node():
     def __init__(self, val):
         super(self).__init__()
