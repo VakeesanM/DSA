@@ -30,15 +30,15 @@ class PriorityQueue():
 
 
 
+if __name__ == "__main__":
+    PQ = PriorityQueue()
+    rng = np.random.default_rng(seed=42)
+    num = rng.integers(low=0, high=10).item() 
 
-PQ = PriorityQueue()
-rng = np.random.default_rng(seed=42)
-num = rng.integers(low=0, high=10).item() 
-
-for i in range(10):
-    PQ.insert(num)
-    print(PQ)
-    num =  rng.integers(low=0, high=100).item() 
-    if num > 50:
-        val = PQ.pop()
-        print(f"{val} was popped")
+    for i in range(10):
+        PQ.insert(num)
+        print(PQ)
+        num =  rng.integers(low=0, high=100).item() 
+        if num > 50:
+            val = PQ.pop()
+            print(f"{val} was popped")
